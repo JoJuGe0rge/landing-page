@@ -1,0 +1,162 @@
+/*-----------------------------
+    CUSTOM
+-----------------------------*/
+
+a {
+    color: #373737;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #525252;
+}
+
+div[data-editable="text"] ul,
+div[data-editable="text"] ol {
+    padding-left: 35px;
+}
+
+div[data-editable="text"] ul {
+    list-style-image: url(../img/13.png);
+}
+
+div[data-editable="text"] ul li,
+div[data-editable="text"] ol li {
+    margin: 6px 0;
+}
+
+/* [ Base text ] */
+
+div.text-content,
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] input[type="email"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] input[type="email"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] label,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] input[type="email"],
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="webinarNew"] .directional {
+    font-size: 21px;
+    font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+    color: rgb(45, 53, 53);
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+/* [ Webform text ] */
+
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] input[type="email"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] input[type="email"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] label,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] input[type="email"],
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="webinarNew"] .directional {
+    font-size: 24px;
+    color: rgb(209, 218, 218);
+}
+
+/* [ Webform inputs ] */
+
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] input[type="email"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] input[type="email"],
+div[data-editable="webformNew"] [data-item-what="phone"] .fix-table-bug,
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] input[type="email"],
+div[data-editable="webinarNew"] [data-item-what="phone"] .fix-table-bug,
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 0 0 #dbdede;
+    background-color: rgb(255, 255, 255);
+}
+
+div[data-editable="webformNew"] [data-item-what="phone"] input[type="text"],
+div[data-editable="webinarNew"] [data-item-what="phone"] input[type="text"] {
+    border: none;
+    box-shadow: none;
+}
+
+div[data-editable="webformNew"] .directional::after {
+    border-color: rgb(209, 218, 218) transparent transparent transparent;
+}
+
+[data-editable="webformNewItem"].opened .directional::after {
+    border-color: transparent transparent rgb(209, 218, 218) transparent;
+}
+
+.custom-form [data-editable="webformNewItem"],
+.custom-form [data-editable="webformNewButton"],
+.custom-form [data-editable="webformNewItem"] [data-editable-item="label"],
+.custom-form [data-editable="webformNewItem"] [data-editable-item="field"] {
+    height: 100px;
+}
+
+.custom-form [data-editable="webformNewItem"] {
+    width: 292px;
+}
+
+/* [ Button container ] */
+
+div[data-editable="button"],
+div[data-editable="webinarButton"],
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+    background-color: #f31a43;
+    box-shadow: 0 3px 0 0 #d01130;
+}
+
+/* [ Button text ] */
+
+div[data-editable="button"] button,
+div[data-editable="webinarButton"] button,
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 2px rgba(128, 128, 128, 0.2);
+}
+
+/* [ Button :hover ] */
+
+div[data-editable="button"].hover,
+div[data-editable="webinarButton"].hover,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+    background-color: rgba(225, 67, 96, 1);
+}
+
+div[data-editable="button"].hover button,
+div[data-editable="webinarButton"].hover button,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+    color: #fff;
+}
